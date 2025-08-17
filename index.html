@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Solutions Agency</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="font-sans bg-gray-50">
+    <!-- Navigation Bar -->
+    <nav class="bg-white shadow-md fixed w-full z-10">
+        <div class="container mx-auto px-4 py-3">
+            <div class="flex justify-between items-center">
+                <div class="text-2xl font-bold text-indigo-600">DigiSolutions</div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="index.html" class="text-indigo-600 hover:text-indigo-800 transition duration-300">Home</a>
+                    <a href="services.html" class="text-gray-600 hover:text-indigo-600 transition duration-300">Services</a>
+                    <a href="contact.html" class="text-gray-600 hover:text-indigo-600 transition duration-300">Contact</a>
+                </div>
+                <div class="md:hidden">
+                    <button id="menu-toggle" class="text-gray-600 hover:text-indigo-600 focus:outline-none">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="md:hidden hidden bg-white pb-4 px-4">
+            <a href="index.html" class="block py-2 text-indigo-600 hover:bg-gray-100 rounded px-2">Home</a>
+            <a href="services.html" class="block py-2 text-gray-600 hover:bg-gray-100 hover:text-indigo-600 rounded px-2">Services</a>
+            <a href="contact.html" class="block py-2 text-gray-600 hover:bg-gray-100 hover:text-indigo-600 rounded px-2">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="pt-32 pb-20 bg-gradient-to-r from-indigo-500 to-purple-600 text-white">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-10 md:mb-0">
+                    <h1 class="text-4xl md:text-5xl font-bold mb-4 leading-tight">Transform Your Digital Presence</h1>
+                    <p class="text-xl mb-8">We help businesses grow with cutting-edge digital solutions tailored to your needs.</p>
+                    <a href="contact.html" class="bg-white text-indigo-600 font-bold py-3 px-8 rounded-full hover:bg-gray-100 hover:shadow-lg transition duration-300 inline-block">Get Started</a>
+                </div>
+                <div class="md:w-1/2">
+                    <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="Digital Solutions" class="rounded-lg shadow-2xl">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-16 text-gray-800">Why Choose Us</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+                <!-- Feature 1 -->
+                <div class="bg-gray-50 p-8 rounded-lg shadow-md hover:shadow-xl transition duration-300 text-center">
+                    <div class="bg-indigo-100 w-16 h-16 mx-auto rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-rocket text-2xl text-indigo-600"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4 text-gray-800">Fast Delivery</h3>
+                    <p class="text-gray-600">We deliver projects on time without compromising on quality or performance.</p>
+                </div>
+                <!-- Feature 2 -->
+                <div class="bg-gray-50 p-8 rounded-lg shadow-md hover:shadow-xl transition duration-300 text-center">
+                    <div class="bg-indigo-100 w-16 h-16 mx-auto rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-cog text-2xl text-indigo-600"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4 text-gray-800">Customized Solutions</h3>
+                    <p class="text-gray-600">Every solution is tailored to your specific business needs and objectives.</p>
+                </div>
+                <!-- Feature 3 -->
+                <div class="bg-gray-50 p-8 rounded-lg shadow-md hover:shadow-xl transition duration-300 text-center">
+                    <div class="bg-indigo-100 w-16 h-16 mx-auto rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-headset text-2xl text-indigo-600"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4 text-gray-800">24/7 Support</h3>
+                    <p class="text-gray-600">Our dedicated team is always available to assist you with any issues or questions.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="py-20 bg-gray-50 services-section">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-16 text-gray-800">Our Services</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Service 1 -->
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300">
+                    <div class="bg-indigo-100 w-14 h-14 rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-search text-xl text-indigo-600"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-gray-800">SEO</h3>
+                    <p class="text-gray-600 mb-4">Boost your online visibility and drive organic traffic with our expert SEO strategies.</p>
+                    <a href="services.html" class="text-indigo-600 hover:text-indigo-800 font-medium inline-flex items-center">
+                        Learn More <i class="fas fa-arrow-right ml-2"></i>
+                    </a>
+                </div>
+                <!-- Service 2 -->
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300">
+                    <div class="bg-indigo-100 w-14 h-14 rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-bullhorn text-xl text-indigo-600"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-gray-800">Marketing</h3>
+                    <p class="text-gray-600 mb-4">Develop comprehensive marketing strategies that connect with your target audience.</p>
+                    <a href="services.html" class="text-indigo-600 hover:text-indigo-800 font-medium inline-flex items-center">
+                        Learn More <i class="fas fa-arrow-right ml-2"></i>
+                    </a>
+                </div>
+                <!-- Service 3 -->
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300">
+                    <div class="bg-indigo-100 w-14 h-14 rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-robot text-xl text-indigo-600"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-gray-800">AI Agent</h3>
+                    <p class="text-gray-600 mb-4">Leverage the power of AI to automate processes and enhance customer experiences.</p>
+                    <a href="services.html" class="text-indigo-600 hover:text-indigo-800 font-medium inline-flex items-center">
+                        Learn More <i class="fas fa-arrow-right ml-2"></i>
+                    </a>
+                </div>
+                <!-- Service 4 -->
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300">
+                    <div class="bg-indigo-100 w-14 h-14 rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-laptop-code text-xl text-indigo-600"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-gray-800">Website Development</h3>
+                    <p class="text-gray-600 mb-4">Create stunning, responsive websites that deliver exceptional user experiences.</p>
+                    <a href="services.html" class="text-indigo-600 hover:text-indigo-800 font-medium inline-flex items-center">
+                        Learn More <i class="fas fa-arrow-right ml-2"></i>
+                    </a>
+                </div>
+                <!-- Service 5 -->
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300">
+                    <div class="bg-indigo-100 w-14 h-14 rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-cogs text-xl text-indigo-600"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-gray-800">Automation</h3>
+                    <p class="text-gray-600 mb-4">Streamline your business operations with custom automation solutions.</p>
+                    <a href="services.html" class="text-indigo-600 hover:text-indigo-800 font-medium inline-flex items-center">
+                        Learn More <i class="fas fa-arrow-right ml-2"></i>
+                    </a>
+                </div>
+                <!-- View All Services -->
+                <div class="bg-gradient-to-r from-indigo-500 to-purple-600 p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300 flex flex-col justify-center items-center text-white">
+                    <h3 class="text-xl font-bold mb-3">Explore All Services</h3>
+                    <p class="text-white mb-4 text-center">Discover how our comprehensive services can help your business grow.</p>
+                    <a href="services.html" class="bg-white text-indigo-600 py-2 px-6 rounded-full hover:bg-gray-100 transition duration-300 font-medium">
+                        View All Services
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Who We Are Section -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-10 md:mb-0">
+                    <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="Our Team" class="rounded-lg shadow-xl">
+                </div>
+                <div class="md:w-1/2 md:pl-12">
+                    <h2 class="text-3xl font-bold mb-6 text-gray-800">Who We Are</h2>
+                    <p class="text-gray-600 mb-6 leading-relaxed">
+                        DigiSolutions is a team of passionate digital experts dedicated to helping businesses thrive in the digital landscape. With over 10 years of experience, we've helped hundreds of companies transform their online presence and achieve remarkable growth.
+                    </p>
+                    <p class="text-gray-600 mb-8 leading-relaxed">
+                        Our approach combines creativity, technical expertise, and data-driven strategies to deliver solutions that not only look great but also drive real business results.
+                    </p>
+                    <a href="contact.html" class="bg-indigo-600 text-white font-bold py-3 px-8 rounded-full hover:bg-indigo-700 transition duration-300 inline-block">Get in Touch</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <!-- Company Info -->
+                <div class="col-span-1 md:col-span-1">
+                    <h3 class="text-xl font-bold mb-4">DigiSolutions</h3>
+                    <p class="text-gray-400 mb-4">Transforming businesses through innovative digital solutions.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white transition duration-300"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white transition duration-300"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white transition duration-300"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white transition duration-300"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <!-- Quick Links -->
+                <div class="col-span-1">
+                    <h3 class="text-xl font-bold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="text-gray-400 hover:text-white transition duration-300">Home</a></li>
+                        <li><a href="services.html" class="text-gray-400 hover:text-white transition duration-300">Services</a></li>
+                        <li><a href="contact.html" class="text-gray-400 hover:text-white transition duration-300">Contact</a></li>
+                    </ul>
+                </div>
+                <!-- Services -->
+                <div class="col-span-1">
+                    <h3 class="text-xl font-bold mb-4">Services</h3>
+                    <ul class="space-y-2">
+                        <li><a href="services.html" class="text-gray-400 hover:text-white transition duration-300">SEO</a></li>
+                        <li><a href="services.html" class="text-gray-400 hover:text-white transition duration-300">Marketing</a></li>
+                        <li><a href="services.html" class="text-gray-400 hover:text-white transition duration-300">AI Agent</a></li>
+                        <li><a href="services.html" class="text-gray-400 hover:text-white transition duration-300">Website Development</a></li>
+                        <li><a href="services.html" class="text-gray-400 hover:text-white transition duration-300">Automation</a></li>
+                    </ul>
+                </div>
+                <!-- Contact Info -->
+                <div class="col-span-1">
+                    <h3 class="text-xl font-bold mb-4">Contact Us</h3>
+                    <ul class="space-y-2">
+                        <li class="flex items-start">
+                            <i class="fas fa-map-marker-alt mt-1 mr-3 text-indigo-400"></i>
+                            <span class="text-gray-400">123 Digital Street, Tech City, TC 12345</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-phone-alt mr-3 text-indigo-400"></i>
+                            <span class="text-gray-400">+1 (555) 123-4567</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-envelope mr-3 text-indigo-400"></i>
+                            <span class="text-gray-400">info@digisolutions.com</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-10 pt-6 text-center text-gray-400">
+                <p>&copy; 2023 DigiSolutions. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

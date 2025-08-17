@@ -1,0 +1,112 @@
+/* Custom styles beyond Tailwind */
+
+/* Smooth scrolling for the entire page */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Animation for hover effects */
+.hover-scale {
+    transition: transform 0.3s ease;
+}
+
+.hover-scale:hover {
+    transform: scale(1.05);
+}
+
+/* Custom animations */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.animate-fadeIn {
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+/* Enhanced hover animations */
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}
+
+.hover-pulse:hover {
+    animation: pulse 1s infinite;
+}
+
+/* Form validation styles */
+input:focus:invalid,
+textarea:focus:invalid {
+    border-color: #f56565;
+}
+
+.form-error {
+    color: #f56565;
+    font-size: 0.875rem;
+    margin-top: 0.25rem;
+}
+
+/* Success message styling */
+.form-success {
+    background-color: #c6f6d5;
+    color: #2f855a;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+/* Error message styling */
+.form-error-message {
+    background-color: #fed7d7;
+    color: #c53030;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+/* Custom styling for FAQ accordion */
+.faq-toggle i {
+    transition: transform 0.3s ease;
+}
+
+.faq-toggle.active i {
+    transform: rotate(180deg);
+}
+
+/* Custom styling for mobile menu transition */
+#mobile-menu {
+    transition: all 0.3s ease-in-out;
+    max-height: 0;
+    overflow: hidden;
+}
+
+#mobile-menu.show {
+    max-height: 300px;
+}
+
+/* Improved responsive styles */
+@media (max-width: 768px) {
+    .container {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    
+    h1 {
+        font-size: 2rem;
+    }
+    
+    h2 {
+        font-size: 1.75rem;
+    }
+}
+
+/* Button hover effects */
+.btn-hover-effect {
+    transition: all 0.3s ease;
+}
+
+.btn-hover-effect:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}

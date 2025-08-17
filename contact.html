@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Digital Solutions Agency</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="font-sans bg-gray-50">
+    <!-- Navigation Bar -->
+    <nav class="bg-white shadow-md fixed w-full z-10">
+        <div class="container mx-auto px-4 py-3">
+            <div class="flex justify-between items-center">
+                <div class="text-2xl font-bold text-indigo-600">DigiSolutions</div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="index.html" class="text-gray-600 hover:text-indigo-600 transition duration-300">Home</a>
+                    <a href="services.html" class="text-gray-600 hover:text-indigo-600 transition duration-300">Services</a>
+                    <a href="contact.html" class="text-indigo-600 hover:text-indigo-800 transition duration-300">Contact</a>
+                </div>
+                <div class="md:hidden">
+                    <button id="menu-toggle" class="text-gray-600 hover:text-indigo-600 focus:outline-none">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="md:hidden hidden bg-white pb-4 px-4">
+            <a href="index.html" class="block py-2 text-gray-600 hover:bg-gray-100 hover:text-indigo-600 rounded px-2">Home</a>
+            <a href="services.html" class="block py-2 text-gray-600 hover:bg-gray-100 hover:text-indigo-600 rounded px-2">Services</a>
+            <a href="contact.html" class="block py-2 text-indigo-600 hover:bg-gray-100 rounded px-2">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="pt-32 pb-20 bg-gradient-to-r from-indigo-500 to-purple-600 text-white">
+        <div class="container mx-auto px-4 text-center">
+            <h1 class="text-4xl md:text-5xl font-bold mb-4">Contact Us</h1>
+            <p class="text-xl max-w-3xl mx-auto">Have questions or ready to start your project? Get in touch with our team today.</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="py-20">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col lg:flex-row gap-12">
+                <!-- Contact Form -->
+                <div class="lg:w-1/2">
+                    <h2 class="text-3xl font-bold mb-6 text-gray-800">Send Us a Message</h2>
+                    <form id="contact-form" class="space-y-6">
+                        <div id="form-message" class="hidden p-4 rounded-lg mb-4"></div>
+                        
+                        <div>
+                            <label for="name" class="block text-gray-700 font-medium mb-2">Your Name</label>
+                            <input type="text" id="name" name="name" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 transition duration-300" placeholder="John Doe">
+                            <p id="name-error" class="text-red-500 text-sm mt-1 hidden"></p>
+                        </div>
+                        
+                        <div>
+                            <label for="email" class="block text-gray-700 font-medium mb-2">Your Email</label>
+                            <input type="email" id="email" name="email" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 transition duration-300" placeholder="john@example.com">
+                            <p id="email-error" class="text-red-500 text-sm mt-1 hidden"></p>
+                        </div>
+                        
+                        <div>
+                            <label for="message" class="block text-gray-700 font-medium mb-2">Your Message</label>
+                            <textarea id="message" name="message" rows="5" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 transition duration-300" placeholder="How can we help you?"></textarea>
+                            <p id="message-error" class="text-red-500 text-sm mt-1 hidden"></p>
+                        </div>
+                        
+                        <button type="submit" class="bg-indigo-600 text-white font-bold py-3 px-8 rounded-full hover:bg-indigo-700 transition duration-300 inline-block w-full md:w-auto">Send Message</button>
+                    </form>
+                </div>
+                
+                <!-- Contact Information & Map -->
+                <div class="lg:w-1/2">
+                    <h2 class="text-3xl font-bold mb-6 text-gray-800">Our Location</h2>
+                    <!-- Google Map -->
+                    <div class="h-64 md:h-80 bg-gray-200 rounded-lg mb-8 overflow-hidden">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d387193.3059353029!2d-74.25986548248684!3d40.69714941932609!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2s!4v1659123456789!5m2!1sen!2s" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                    
+                    <!-- Contact Information -->
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <h3 class="text-xl font-bold mb-4 text-gray-800">Contact Information</h3>
+                        <ul class="space-y-4">
+                            <li class="flex items-start">
+                                <div class="bg-indigo-100 w-10 h-10 rounded-full flex items-center justify-center mr-4 shrink-0">
+                                    <i class="fas fa-map-marker-alt text-indigo-600"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold text-gray-700">Address</h4>
+                                    <p class="text-gray-600">123 Digital Street, Tech City, TC 12345</p>
+                                </div>
+                            </li>
+                            <li class="flex items-start">
+                                <div class="bg-indigo-100 w-10 h-10 rounded-full flex items-center justify-center mr-4 shrink-0">
+                                    <i class="fas fa-phone-alt text-indigo-600"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold text-gray-700">Phone</h4>
+                                    <p class="text-gray-600">+1 (555) 123-4567</p>
+                                </div>
+                            </li>
+                            <li class="flex items-start">
+                                <div class="bg-indigo-100 w-10 h-10 rounded-full flex items-center justify-center mr-4 shrink-0">
+                                    <i class="fas fa-envelope text-indigo-600"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold text-gray-700">Email</h4>
+                                    <p class="text-gray-600">info@digisolutions.com</p>
+                                </div>
+                            </li>
+                            <li class="flex items-start">
+                                <div class="bg-indigo-100 w-10 h-10 rounded-full flex items-center justify-center mr-4 shrink-0">
+                                    <i class="fas fa-clock text-indigo-600"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold text-gray-700">Business Hours</h4>
+                                    <p class="text-gray-600">Monday - Friday: 9:00 AM - 5:00 PM</p>
+                                    <p class="text-gray-600">Saturday - Sunday: Closed</p>
+                                </div>
+                            </li>
+                        </ul>
+                        
+                        <!-- Social Media Links -->
+                        <div class="mt-6">
+                            <h4 class="font-semibold text-gray-700 mb-3">Connect With Us</h4>
+                            <div class="flex space-x-4">
+                                <a href="#" class="bg-indigo-100 w-10 h-10 rounded-full flex items-center justify-center text-indigo-600 hover:bg-indigo-600 hover:text-white transition duration-300">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                                <a href="#" class="bg-indigo-100 w-10 h-10 rounded-full flex items-center justify-center text-indigo-600 hover:bg-indigo-600 hover:text-white transition duration-300">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                                <a href="#" class="bg-indigo-100 w-10 h-10 rounded-full flex items-center justify-center text-indigo-600 hover:bg-indigo-600 hover:text-white transition duration-300">
+                                    <i class="fab fa-linkedin-in"></i>
+                                </a>
+                                <a href="#" class="bg-indigo-100 w-10 h-10 rounded-full flex items-center justify-center text-indigo-600 hover:bg-indigo-600 hover:text-white transition duration-300">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="py-16 bg-gray-100">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold mb-10 text-center text-gray-800">Frequently Asked Questions</h2>
+            <div class="max-w-3xl mx-auto space-y-6">
+                <!-- FAQ Item 1 -->
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <button class="faq-toggle flex justify-between items-center w-full text-left">
+                        <h3 class="text-lg font-semibold text-gray-800">What services do you offer?</h3>
+                        <i class="fas fa-chevron-down text-indigo-600 transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-content hidden mt-4">
+                        <p class="text-gray-600">We offer a comprehensive range of digital services including SEO, digital marketing, AI agent solutions, website development, and business automation. Each service is tailored to meet your specific business needs and objectives.</p>
+                    </div>
+                </div>
+                
+                <!-- FAQ Item 2 -->
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <button class="faq-toggle flex justify-between items-center w-full text-left">
+                        <h3 class="text-lg font-semibold text-gray-800">How long does it take to complete a project?</h3>
+                        <i class="fas fa-chevron-down text-indigo-600 transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-content hidden mt-4">
+                        <p class="text-gray-600">Project timelines vary depending on the scope and complexity of the work. A simple website might take 2-4 weeks, while more complex projects with custom features could take 2-3 months. During our initial consultation, we'll provide you with a detailed timeline based on your specific requirements.</p>
+                    </div>
+                </div>
+                
+                <!-- FAQ Item 3 -->
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <button class="faq-toggle flex justify-between items-center w-full text-left">
+                        <h3 class="text-lg font-semibold text-gray-800">What is your pricing structure?</h3>
+                        <i class="fas fa-chevron-down text-indigo-600 transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-content hidden mt-4">
+                        <p class="text-gray-600">We offer customized pricing based on your specific needs and project requirements. We provide detailed proposals that outline all costs upfront, so there are no surprises. Contact us for a free consultation and quote tailored to your project.</p>
+                    </div>
+                </div>
+                
+                <!-- FAQ Item 4 -->
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <button class="faq-toggle flex justify-between items-center w-full text-left">
+                        <h3 class="text-lg font-semibold text-gray-800">Do you offer ongoing support after project completion?</h3>
+                        <i class="fas fa-chevron-down text-indigo-600 transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-content hidden mt-4">
+                        <p class="text-gray-600">Yes, we offer various support and maintenance packages to ensure your digital assets continue to perform optimally. Our team is available for technical support, content updates, security monitoring, and performance optimization based on the package you choose.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <!-- Company Info -->
+                <div class="col-span-1 md:col-span-1">
+                    <h3 class="text-xl font-bold mb-4">DigiSolutions</h3>
+                    <p class="text-gray-400 mb-4">Transforming businesses through innovative digital solutions.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white transition duration-300"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white transition duration-300"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white transition duration-300"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white transition duration-300"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <!-- Quick Links -->
+                <div class="col-span-1">
+                    <h3 class="text-xl font-bold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="text-gray-400 hover:text-white transition duration-300">Home</a></li>
+                        <li><a href="services.html" class="text-gray-400 hover:text-white transition duration-300">Services</a></li>
+                        <li><a href="contact.html" class="text-gray-400 hover:text-white transition duration-300">Contact</a></li>
+                    </ul>
+                </div>
+                <!-- Services -->
+                <div class="col-span-1">
+                    <h3 class="text-xl font-bold mb-4">Services</h3>
+                    <ul class="space-y-2">
+                        <li><a href="services.html" class="text-gray-400 hover:text-white transition duration-300">SEO</a></li>
+                        <li><a href="services.html" class="text-gray-400 hover:text-white transition duration-300">Marketing</a></li>
+                        <li><a href="services.html" class="text-gray-400 hover:text-white transition duration-300">AI Agent</a></li>
+                        <li><a href="services.html" class="text-gray-400 hover:text-white transition duration-300">Website Development</a></li>
+                        <li><a href="services.html" class="text-gray-400 hover:text-white transition duration-300">Automation</a></li>
+                    </ul>
+                </div>
+                <!-- Contact Info -->
+                <div class="col-span-1">
+                    <h3 class="text-xl font-bold mb-4">Contact Us</h3>
+                    <ul class="space-y-2">
+                        <li class="flex items-start">
+                            <i class="fas fa-map-marker-alt mt-1 mr-3 text-indigo-400"></i>
+                            <span class="text-gray-400">123 Digital Street, Tech City, TC 12345</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-phone-alt mr-3 text-indigo-400"></i>
+                            <span class="text-gray-400">+1 (555) 123-4567</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-envelope mr-3 text-indigo-400"></i>
+                            <span class="text-gray-400">info@digisolutions.com</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-10 pt-6 text-center text-gray-400">
+                <p>&copy; 2023 DigiSolutions. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
